@@ -1,0 +1,248 @@
+Microsoft Windows [Version 10.0.19045.2728]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\annap>cd SI_2023_lab1_196019
+
+C:\Users\annap\SI_2023_lab1_196019>git init
+Initialized empty Git repository in C:/Users/annap/SI_2023_lab1_196019/.git/
+
+C:\Users\annap\SI_2023_lab1_196019>git remote add origin https://github.com/anapet/SI_2023_lab1_196019.git
+
+C:\Users\annap\SI_2023_lab1_196019>git add -all
+error: did you mean `--all` (with two dashes)?
+
+C:\Users\annap\SI_2023_lab1_196019>git add --all
+
+C:\Users\annap\SI_2023_lab1_196019>git commit -m "Initial commit."
+[master (root-commit) d36f8c6] Initial commit.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+C:\Users\annap\SI_2023_lab1_196019>git add --all
+
+C:\Users\annap\SI_2023_lab1_196019>git commit -m "Add java class."
+[master b8d964c] Add java class.
+ 1 file changed, 41 insertions(+)
+ create mode 100644 SILab1.java
+
+C:\Users\annap\SI_2023_lab1_196019>git push origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 818 bytes | 272.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/anapet/SI_2023_lab1_196019.git
+ * [new branch]      master -> master
+
+C:\Users\annap\SI_2023_lab1_196019>git branch bug1
+
+C:\Users\annap\SI_2023_lab1_196019>git branch bug2
+
+C:\Users\annap\SI_2023_lab1_196019>git branch bug3
+
+C:\Users\annap\SI_2023_lab1_196019>git checkout bug1
+Switched to branch 'bug1'
+
+C:\Users\annap\SI_2023_lab1_196019>git status
+On branch bug1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SILab1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\annap\SI_2023_lab1_196019>git add --all
+
+C:\Users\annap\SI_2023_lab1_196019>git commit -m "Fix wrong loop for reading."
+[bug1 62539ea] Fix wrong loop for reading.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\annap\SI_2023_lab1_196019>git checkout bug2
+Switched to branch 'bug2'
+
+C:\Users\annap\SI_2023_lab1_196019>git status
+On branch bug2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SILab1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\annap\SI_2023_lab1_196019>git add -all
+error: did you mean `--all` (with two dashes)?
+
+C:\Users\annap\SI_2023_lab1_196019>git add --all
+
+C:\Users\annap\SI_2023_lab1_196019>git commit -m "Fix wrong condition in fiterOddNumbers."
+[bug2 ea97114] Fix wrong condition in fiterOddNumbers.
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+C:\Users\annap\SI_2023_lab1_196019>git checkout bug3
+Switched to branch 'bug3'
+
+C:\Users\annap\SI_2023_lab1_196019>git status
+On branch bug3
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SILab1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\annap\SI_2023_lab1_196019>git add --all
+
+C:\Users\annap\SI_2023_lab1_196019>git commit -m "Fix method sumEvenNumbers."
+[bug3 f988c19] Fix method sumEvenNumbers.
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+C:\Users\annap\SI_2023_lab1_196019>git push origin master
+Everything up-to-date
+
+C:\Users\annap\SI_2023_lab1_196019>git push
+fatal: The current branch bug3 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin bug3
+
+
+C:\Users\annap\SI_2023_lab1_196019>git push bug1
+fatal: 'bug1' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\annap\SI_2023_lab1_196019>git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\annap\SI_2023_lab1_196019>git push -u origin bug1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 320 bytes | 160.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug1' on GitHub by visiting:
+remote:      https://github.com/anapet/SI_2023_lab1_196019/pull/new/bug1
+remote:
+To https://github.com/anapet/SI_2023_lab1_196019.git
+ * [new branch]      bug1 -> bug1
+branch 'bug1' set up to track 'origin/bug1'.
+
+C:\Users\annap\SI_2023_lab1_196019>git push -u origin bug2
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 338 bytes | 338.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/anapet/SI_2023_lab1_196019/pull/new/bug2
+remote:
+To https://github.com/anapet/SI_2023_lab1_196019.git
+ * [new branch]      bug2 -> bug2
+branch 'bug2' set up to track 'origin/bug2'.
+
+C:\Users\annap\SI_2023_lab1_196019>git push -u origin bug3
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 347 bytes | 347.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug3' on GitHub by visiting:
+remote:      https://github.com/anapet/SI_2023_lab1_196019/pull/new/bug3
+remote:
+To https://github.com/anapet/SI_2023_lab1_196019.git
+ * [new branch]      bug3 -> bug3
+branch 'bug3' set up to track 'origin/bug3'.
+
+C:\Users\annap\SI_2023_lab1_196019>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\annap\SI_2023_lab1_196019>git merge bug1
+Updating b8d964c..62539ea
+Fast-forward
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\annap\SI_2023_lab1_196019>git push origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/anapet/SI_2023_lab1_196019.git
+   b8d964c..62539ea  master -> master
+
+C:\Users\annap\SI_2023_lab1_196019>git merge bug2
+Auto-merging SILab1.java
+Merge made by the 'ort' strategy.
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\annap\SI_2023_lab1_196019>git push origin master
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 220 bytes | 110.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/anapet/SI_2023_lab1_196019.git
+   62539ea..7c7e09d  master -> master
+
+C:\Users\annap\SI_2023_lab1_196019>git push origin bug1
+Everything up-to-date
+
+C:\Users\annap\SI_2023_lab1_196019>git push origin bug2
+Everything up-to-date
+
+C:\Users\annap\SI_2023_lab1_196019>git merge bug3
+Auto-merging SILab1.java
+Merge made by the 'ort' strategy.
+ SILab1.java | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+C:\Users\annap\SI_2023_lab1_196019>git push origin master
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 220 bytes | 220.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/anapet/SI_2023_lab1_196019.git
+   7c7e09d..7a09ab7  master -> master
+
+C:\Users\annap\SI_2023_lab1_196019>git checkout bug3
+Switched to branch 'bug3'
+Your branch is up to date with 'origin/bug3'.
+
+C:\Users\annap\SI_2023_lab1_196019>git rebase master
+Successfully rebased and updated refs/heads/bug3.
+
+C:\Users\annap\SI_2023_lab1_196019>git chekout master
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+C:\Users\annap\SI_2023_lab1_196019>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\annap\SI_2023_lab1_196019>git merge bug3
+Already up to date.
+
+C:\Users\annap\SI_2023_lab1_196019>git push origin bug3
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/anapet/SI_2023_lab1_196019.git
+   f988c19..7a09ab7  bug3 -> bug3
+
+C:\Users\annap\SI_2023_lab1_196019>git logs
+git: 'logs' is not a git command. See 'git --help'.
+
+The most similar command is
+        log

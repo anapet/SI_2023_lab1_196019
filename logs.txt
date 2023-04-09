@@ -1,0 +1,45 @@
+C:\Users\annap\SI_2023_lab1_196019>git log
+commit 7a09ab7b279d9c0ef8597c6fd7b37ce1632eac01 (HEAD -> master, origin/master, origin/bug3, bug3)
+Merge: 7c7e09d f988c19
+Author: anna <annapetreska@hotmail.com>
+Date:   Sun Apr 9 23:38:18 2023 +0200
+
+    Merge branch 'bug3'
+
+commit 7c7e09d851aed353ea0577ad73af13f1eac1edc4
+Merge: 62539ea ea97114
+Author: anna <annapetreska@hotmail.com>
+Date:   Sun Apr 9 23:37:38 2023 +0200
+
+    Merge branch 'bug2'
+
+commit f988c1993246909bd3402ee6c34dc54fad3e1a01 (origin/bug3, bug3)
+Author: anna <annapetreska@hotmail.com>
+Date:   Sun Apr 9 23:31:53 2023 +0200
+
+    Fix method sumEvenNumbers.
+
+commit ea97114884bcccb36f99939822ff21a678ccc9b4 (origin/bug2, bug2)
+Author: anna <annapetreska@hotmail.com>
+Date:   Sun Apr 9 23:30:51 2023 +0200
+
+    Fix wrong condition in fiterOddNumbers.
+
+commit 62539ea9b8ea52457be7c91ca1aef9f40ecde14c (origin/bug1, bug1)
+Author: anna <annapetreska@hotmail.com>
+Date:   Sun Apr 9 23:29:15 2023 +0200
+
+    Fix wrong loop for reading.
+
+commit b8d964c7a781bdb37b21c787617fb85cdcaeebe4
+Author: anna <annapetreska@hotmail.com>
+Date:   Sun Apr 9 23:27:36 2023 +0200
+
+    Add java class.
+
+commit d36f8c6de5c74a517b8e138a2747aa769e76df7e
+Author: anna <annapetreska@hotmail.com>
+Date:   Sun Apr 9 23:26:28 2023 +0200
+
+    Initial commit.
+(END)
